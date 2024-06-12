@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: knowledge_chat
+
+    volumes:
+      #caso alterar, alterar também em dockerfile
+      - .:/usr/knowledge_chat
+
+    expose:
+      - 8501
+    ports:
+      - 8501:8501

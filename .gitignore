@@ -1,0 +1,7 @@
+data
+logs
+__pycache__/
+temp
+.env*
+chromaDB*
+models
